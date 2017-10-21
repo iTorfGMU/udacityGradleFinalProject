@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/myjoke_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/header_font_size"
+            android:textColor="@android:color/black"
+            tools:text="@string/joke_example"
+            android:padding="@dimen/default_padding"
+            android:layout_margin="@dimen/default_margin"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+        <Button
+            android:id="@+id/tell_me_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding"
+            android:layout_margin="@dimen/default_margin"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/joke_button_text"
+            android:background="@color/colorAccentLight"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccentDark"
+            android:padding="@dimen/default_padding"
+            android:layout_margin="@dimen/default_margin" />
+
+        <TextView
+            android:id="@+id/myjoke_answer_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/body_font_size"
+            android:textColor="@android:color/black"
+            tools:text="@string/joke_answer_example"
+            android:fontFamily="sans-serif-smallcaps"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
