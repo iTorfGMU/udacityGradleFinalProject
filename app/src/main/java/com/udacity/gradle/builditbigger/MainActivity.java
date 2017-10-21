@@ -72,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showMeAJoke(String joke) {
-        JokeActivity.start(joke, this);
         loading_icon.setVisibility(View.INVISIBLE);
+        JokeActivity.start(joke, this);
     }
 
     private class EndpointsAsyncTask extends AsyncTask<Void, Void, String> {
