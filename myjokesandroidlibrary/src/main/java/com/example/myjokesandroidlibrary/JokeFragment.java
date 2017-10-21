@@ -30,9 +30,9 @@ public class JokeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_joke, container, false);
 
-        TextView jokeTextView = root.findViewById(R.id.myjoke_textview);
-        final TextView jokeAnswerTextView = root.findViewById(R.id.myjoke_answer_textview);
-        Button tellMeButton = root.findViewById(R.id.tell_me_button);
+        TextView jokeTextView = (TextView) root.findViewById(R.id.myjoke_textview);
+        final TextView jokeAnswerTextView = (TextView) root.findViewById(R.id.myjoke_answer_textview);
+        Button tellMeButton = (Button) root.findViewById(R.id.tell_me_button);
 
         Intent intent = getActivity().getIntent();
 

@@ -1,5 +1,7 @@
 package com.example.myjokesandroidlibrary;
 
+import com.example.MyJokes;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -9,9 +11,53 @@ import static org.junit.Assert.*;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-public class ExampleUnitTest {
+public class MyJokesUnitTest {
+
     @Test
-    public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 2);
+    public void checkNotNull() throws Exception {
+        int val = 0;
+
+        MyJokes jokes = MyJokes.getInstance(val);
+
+        assertNotNull(jokes);
+    }
+
+    @Test
+    public void checkNotNull_JokeOne() throws Exception {
+        int val = 0;
+
+        MyJokes jokes = MyJokes.getInstance(val);
+
+        assertNotNull(jokes.getAJoke());
+        assertNotEquals(jokes.getAJoke(), "");
+
+        assertNotNull(jokes.getJokeAnswer());
+        assertNotEquals(jokes.getJokeAnswer(), "");
+    }
+
+    @Test
+    public void checkNotNull_JokeTwo() throws Exception {
+        int val = 1;
+
+        MyJokes jokes = MyJokes.getInstance(val);
+
+        assertNotNull(jokes.getAJoke());
+        assertNotEquals(jokes.getAJoke(), "");
+
+        assertNotNull(jokes.getJokeAnswer());
+        assertNotEquals(jokes.getJokeAnswer(), "");
+    }
+
+    @Test
+    public void checkNotNull_JokeThree() throws Exception {
+        int val = 2;
+
+        MyJokes jokes = MyJokes.getInstance(val);
+
+        assertNotNull(jokes.getAJoke());
+        assertNotEquals(jokes.getAJoke(), "");
+
+        assertNotNull(jokes.getJokeAnswer());
+        assertNotEquals(jokes.getJokeAnswer(), "");
     }
 }
