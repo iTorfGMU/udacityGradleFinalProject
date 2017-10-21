@@ -10,7 +10,7 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
 /**
- * Created by torftorf1 on 10/21/17.
+ * Created by Ila on 10/21/17.
  */
 
 public class MainActivityFragment extends Fragment {
