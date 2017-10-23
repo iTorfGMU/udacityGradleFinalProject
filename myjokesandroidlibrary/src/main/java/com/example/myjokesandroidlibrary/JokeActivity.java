@@ -17,9 +17,12 @@ public class JokeActivity extends AppCompatActivity {
 
     public static final String JOKE_KEY = "jokeKey";
 
-    public static void start(String joke, Context context) {
+    public static final String ANSWER_KEY = "jokeAnswer";
+
+    public static void start(String joke, String answer, Context context) {
         Intent intent = new Intent(context, JokeActivity.class);
         intent.putExtra(JokeActivity.JOKE_KEY, joke);
+        intent.putExtra(JokeActivity.ANSWER_KEY, answer);
         context.startActivity(intent);
     }
 

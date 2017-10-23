@@ -37,13 +37,11 @@ public class JokeFragment extends Fragment {
         Intent intent = getActivity().getIntent();
 
         if (intent != null) {
-            String jokeKey = intent.getStringExtra(JokeActivity.JOKE_KEY);
+            String joke = intent.getStringExtra(JokeActivity.JOKE_KEY);
+            String answer = intent.getStringExtra(JokeActivity.ANSWER_KEY);
 
-            Log.d(TAG, jokeKey);
-
-            MyJokes joke = MyJokes.getInstance(Integer.parseInt(jokeKey));
-            jokeTextView.setText(joke.getAJoke());
-            jokeAnswerTextView.setText(joke.getJokeAnswer());
+            jokeTextView.setText(joke);
+            jokeAnswerTextView.setText(answer);
 
             tellMeButton.setOnClickListener(new View.OnClickListener() {
                 @Override
